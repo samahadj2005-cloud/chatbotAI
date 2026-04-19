@@ -1,1 +1,300 @@
 # chatbotAI
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>IA & Sécurité - Anti-Cambriolage</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* HEADER */
+.header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    border-bottom: 2px solid #e94560;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #e94560;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #e94560;
+}
+
+/* HERO */
+.hero {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero h2 span {
+    color: #e94560;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* SECTIONS */
+.section {
+    padding: 50px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #e94560;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 25px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #e94560;
+}
+
+.card p {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* CHATBOT */
+.chatbot-section {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.chatbot-container {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.chatbot-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* FOOTER */
+.footer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px 0;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav a {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="container">
+        <div class="header-content">
+
+            <div class="logo">
+                <h1>🔒 IA & Sécurité</h1>
+                <p>Protégez votre maison avec l'intelligence artificielle</p>
+            </div>
+
+            <div class="nav">
+                <a href="#accueil">Accueil</a>
+                <a href="#presentation">Présentation</a>
+                <a href="#avantages">Avantages</a>
+                <a href="#chatbot">Chatbot</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- HERO -->
+<section id="accueil">
+    <div class="container">
+        <div class="hero">
+            <h2>IA contre les <span>cambriolages</span></h2>
+            <p>Découvrez comment l'intelligence artificielle peut détecter les intrusions et protéger votre maison 24h/24.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PRESENTATION -->
+<section id="presentation" class="section">
+    <div class="container">
+        <h2 class="section-title">📌 Présentation du projet</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🎯 Notre thématique</h3>
+                <p>Nous avons choisi de travailler sur la détection des cambriolages et des intrusions dans les maisons grâce à l'intelligence artificielle.</p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 Comment ça marche ?</h3>
+                <p>L'IA analyse les images des caméras de sécurité. Elle reconnaît les visages, détecte les comportements suspects et envoie des alertes en temps réel.</p>
+            </div>
+
+            <div class="card">
+                <h3>📊 Nos résultats</h3>
+                <p>Nos recherches montrent que l'IA peut atteindre 96% de précision et réduire les fausses alertes de plus de 80%.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AVANTAGES -->
+<section id="avantages" class="section">
+    <div class="container">
+        <h2 class="section-title">✅ Avantages de l'IA pour la sécurité</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🔕 Moins de fausses alertes</h3>
+                <p>L'IA ne se déclenche pas pour un animal ou le vent.</p>
+            </div>
+
+            <div class="card">
+                <h3>📱 Alertes en temps réel</h3>
+                <p>Notification instantanée sur smartphone.</p>
+            </div>
+
+            <div class="card">
+                <h3>👁️ Surveillance 24h/24</h3>
+                <p>La maison est surveillée en permanence.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧠 Reconnaissance faciale</h3>
+                <p>Différence entre famille et inconnus.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CHATBOT -->
+<section id="chatbot" class="section">
+    <div class="container">
+        <h2 class="section-title">💬 Notre Chatbot</h2>
+
+        <div class="chatbot-section">
+
+            <p style="text-align:center; margin-bottom:20px;">
+                Posez vos questions sur l'IA et la sécurité domestique.
+            </p>
+
+            <div class="chatbot-container">
+                <iframe
+                allow="microphone;"
+                width="350"
+                height="430"
+                src="https://console.dialogflow.com/api-client/demo/embedded/6f437ffc-734a-4acf-816d-2dffbfcb982b">
+            </iframe>
+            </div>
+
+            <p style="text-align:center; margin-top:20px; font-size:0.9rem; color:#ccc;">
+                💡 Exemple : "Comment détecter un intrus ?"
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div class="container">
+        <p>Projet IA - Sécurité des maisons</p>
+        <p>© 2025 - Tous droits réservés</p>
+    </div>
+</div>
+
+</body>
+</html>
